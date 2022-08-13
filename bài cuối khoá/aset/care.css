@@ -1,0 +1,81 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  font-family: "Lora", serif;
+}
+
+html, body {
+  font-family: lora;
+}
+
+.dieuhuong {
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  right: 20px;
+  bottom: 600px;
+  z-index: 1;
+}
+.dieuhuong .fa {
+  color: blue;
+}
+
+.main_care .list {
+  width: 80%;
+  margin: auto;
+}
+.main_care .list .text_top {
+  text-align: center;
+  margin: 30px;
+  color: red;
+  text-shadow: 2px 2px aqua;
+}
+.main_care .list p {
+  color: red;
+}
+.main_care .list hr {
+  color: #009688;
+}
+.main_care .list .item {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.main_care .list .item .card {
+  width: 30%;
+  margin-bottom: 30px;
+}
+.main_care .list .item .card img {
+  max-height: 220px;
+  width: auto;
+}
+.main_care .list .item .card:hover {
+  transform: scale(1.2);
+}
+
+.form {
+  border: 1px solid #009688;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+}
+.form .text_button {
+  color: red;
+  line-height: 50px;
+  text-shadow: 2px 2px aqua;
+}
+.form p {
+  color: red;
+}
+.form .mb-3 {
+  color: red;
+  border-color: #009688;
+}/*# sourceMappingURL=care.css.map */

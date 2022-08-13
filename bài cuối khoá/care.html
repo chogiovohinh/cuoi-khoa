@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anh Đức Watch</title>
+    <link rel="stylesheet" href="./aset/filesass2.css">
+    <link rel="stylesheet" href="./aset/header.css">
+    <link rel="stylesheet" href="./aset/care.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gotu&family=Lora&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha584-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+</head>
+<body>
+    <div id="main">
+      <header class="header">
+        <div class="header_top">
+          <div class="header_top-left">
+            <ul class="header_top-left-list">
+              <li class="header_top-left-list-item">
+                  <a class="header_top-left-list-item-link"  href="#"><span class="bi bi-geo-alt">Hệ thống cửa hàng</span> </a></li>
+              <li class="header_top-left-list-item">
+                  <a class="header_top-left-list-item-link" href="#"><span class="bi bi-telephone-fill"></span> 0954 525 882</a></li>
+              <li class="header_top-left-list-item">
+                  <a class="header_top-left-list-item-link" href="#"><span class="bi bi-browser-edge">support@web24h.vn</span> </a></li>
+          </ul>
+          </div>
+          
+          <div class="header_top-right">
+            <ul class="header_top-right-list">
+              <li class="header_top-right-list-item">       
+               <!-- Scrollable modal -->
+                      <!-- Button trigger modal -->
+                      <span class="button-modal text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop1"><span class="bi bi-house-fill" ></span><strong>Đăng nhập</strong> </span>
+                      <!-- Modal -->
+                      <div class="modal " id="staticBackdrop1" data-bs-backdrop="static" data-bs-keyboard="true" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-scrollable">
+                      <div class="modal-content">
+                      <div class="modal-body">
+                          <form>
+                              <div class="row mb-5">
+                                <label for="inputEmail5" class="col-sm-2 col-form-label">Email</label>
+                                <div class="col-sm-10">
+                                <input type="email" class="form-control" id="inputEmail5" required>
+                                </div>
+                              </div>
+                              <div class="row mb-5">
+                                <label for="inputPassword5" class="col-sm-2 col-form-label">Password</label>
+                                <div class="col-sm-10">
+                                  <input type="password" class="form-control" id="inputPassword5" required>
+                                </div>
+                              </div>
+            
+                              <div class="row mb-5">
+                                <div class="col-sm-10 offset-sm-2">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck1">
+                                    <label class="form-check-label" for="gridCheck1">
+                                      Remenber me
+                                    </label>
+                                  </div>
+                                </div>
+                              </div>
+                              <button type="submit" class="btn btn-primary"><a class="text-white text-decoration-none" href="./index.html">Đăng nhập</a></button>
+                            </form>
+                      </div>
+                              </div>
+                          </div>
+                      </div>
+                 </li>
+              <li class="header_top-right-list-item">
+                  <!-- Button trigger modal -->
+                  <span class="button-modal text-white" data-bs-toggle="modal" data-bs-target="#staticBackdrop"><strong>Đăng ký</strong> </span>
+                <!-- Modal -->
+                <div class="modal " id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        
+                        <div class="modal-body">
+  
+                          <form class="row g-5">
+                            <div class="col-md-12">
+                              <label for="inputnamel4" class="form-label">Họ và tên</label>
+                              <input type="text" class="form-control" id="inputname4">
+                              <label for="inputsexl4" class="form-label">Giới tính</label> <br>
+                              <label class="form-check-label" for="inputsexl4">Nam </label>
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="inputsexl4">
+                              <label class="form-check-label" for="inputsexl4">Nữ </label>
+                              <input class="form-check-input" type="radio" name="flexRadioDefault" id="inputsexl4">
+                            </div>
+                            <div class="col-md-12">
+                              <label for="inpuemail" class="form-label">Email</label>
+                              <input type="email" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-md-12">
+                              <label for="inputPassword4" class="form-label">Password</label>
+                              <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress" class="form-label">Số điện thoại</label>
+                              <input type="tel" class="form-control" id="inputAddress" placeholder="+8497225046">
+                            </div>
+                            <div class="col-12">
+                              <label for="inputAddress2" class="form-label">Địa Chỉ</label>
+                              <input type="text" class="form-control" id="inputAddress2" placeholder="Quận, Phường, Số nhà">
+                            </div>
+                            <div class="col-12">
+                              <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="gridCheck">
+                                <label class="form-check-label" for="gridCheck">
+                                  Tôi đồng ý với điều khoản sử dụng
+                                </label>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <button type="submit" class="btn btn-primary"><a class="text-white text-decoration-none" href="./index.html">Đăng Ký</a></button>
+                            </div>
+                          </form>
+                         </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+  
+  
+  
+                  </div>
+              </li>
+          </ul>
+        </div>
+        <div class="header_sportlight">
+          <div class="header_sportlight-shortnews">
+            <a class="header_sportlight-shortnews-link " href="./about.html"><span class="header_sportlight-shortnews-link-note ">Chương trình khuyến mãi “Giờ vàng giá sốc” <br> kéo dài tới hết ngày 12/12/2022</span> </a>
+            </div>
+        <div class="header_sportlight-images ">
+            <!-- <style>#banner_flashanimation { position: absolute; }</style> -->
+            <div id="w_banner"  >
+                <img alt=""src="./aset/img/logo.png" class="ml-5">
+            </div>
+        </div>
+        <div class="header_sportlight-video ">
+          <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Sv0hUoPsA-A " title="Colosseum Champagne" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen controls loop="1" autoplay="1"></iframe>
+        </div>
+    </div>
+        </div>
+        <div class="header_navbar">
+          <nav class="navbar navbar-expand ">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white" href="./index.html">Anh Đức Watch</a>
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button> -->
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                  <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="./index.html">Trang chủ</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./about.html">Cửa hàng</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="./new.html" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                      Tin tức
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item " href="./new.html">Điểm báo</a></li>
+                      <li><a class="dropdown-item " href="./new.html">Sự kiện</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item " href="./new.html">Lịch sử thương hiệu</a></li>
+                      <li><a class="dropdown-item " href="./new.html">Báo chí</a></li>
+                      <li><a class="dropdown-item " href="./new.html">Đánh giá sản phẩm</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="./care.html">Chăm sóc khách hàng</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        </div>
+     </header>
+   <!-- end header -->
+   <div class="slider">
+    <div id="carouselExampleSlides" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./aset/img/carorel/slide1.png" class="d-block w-100" alt="New York">
+            <div class="carousel-caption d-none d-md-block m-10">
+              <h5>Anh Đức Watch</h5>
+              <p>Phong cách thời trang của bạn...</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./aset/img/carorel/slide2.png" class="d-block w-100" alt="Chicago">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Anh Đức Watch</h5>
+              <p>Phong cách thời trang của bạn...</p>
+            </div>
+          </div>
+        </div>
+      </div>
+   </div>
+
+<div class="main_care">
+  <section class="list">
+    <h1 class="text_top">GÓC TƯ VẤN</h1>
+    <hr>
+    <div class="item">
+      <div class="card">
+        <img src="./aset/img/care/goctuvan/249981806-5222493554442074-1538492726718796127-n.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">5 chiếc đồng hồ sang trọng màu hồng xứng đáng có một vị trí trong bộ sưu tập của bạn</h6>
+          <p class="card-text"> Với những cô nàng yêu thích màu hồng thì một chiếc đồng hồ màu hồng là thứ không thiếu trong tủ đồ.
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./aset/img/care/goctuvan/dsc074611.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Giải mã ý nghĩa các con số và chữ cái trong mã tham chiếu đồng hồ Patek Philippe</h6>
+          <p class="card-text">Patek Philippe là thương hiệu của sự sang trọng và tinh tế vượt thời gian. Thương hiệu có thể tạo ra một bầu không khí…
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./aset/img/care/goctuvan/rolex-fast-delivery-7079-bearbeitet-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Cách định giá đồng hồ Rolex chính xác nhất qua 6 yếu tố mà bất kì người đam mê đồng hồ nào cũng phải biết</h6>
+          <p class="card-text"> Trong thế giới đồng hồ rộng lớn, định giá là một trong những yếu tố quan trọng trong cả việc mua và bán một chiếc…
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./aset/img/care/goctuvan/vacheron-constantin-egerie-2-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Bật mí 7 mẫu đồng hồ sang trọng lấp lánh dành cho các quý cô</h6>
+          <p class="card-text"> Hướng đến vẻ đẹp hoàn mỹ, những mẫu nữ sang trọng lấp lánh được ra đời như một phụ kiện thiết yếu dành cho phái…
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./aset/img/care/goctuvan/watch-case-shapes.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">12 hình dáng thiết kế vỏ đồng hồ phổ biến nhất trong thế giới đồng hồ cao cấp</h6>
+          <p class="card-text"> Nếu bộ máy hoạt động được ví như trái tim của đồng hồ thì lớp vỏ chính là lồng ngực bao trọn trái tim ấy.…
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./aset/img/care/goctuvan/z3369931430929-ed5427dfd24ff83a265bed68ec55eb0a.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Hướng dẫn cách chọn mua đồng hồ Vacheron Constantin mới nhất mà bạn có thể chưa biết</h6>
+          <p class="card-text">Dưới đây là tất cả những gì bạn cần biết về thương hiệu đồng hồ Vacheron Constantin và hướng dẫn cách chọn mua đồng hồ…
+          </p>
+        </div>
+      </div>
+    </div>
+    <h1 class="text_top"> PHONG THUỶ</h1>
+    <hr>
+    <div class="item">
+      <div class="card">
+        <img src="./aset/img/care/phongthuy/about2.jpg" class="card-img-top" alt="..."> 
+        <div class="card-body">
+          <h6 class="card-title">
+            Cách chọn đồng hồ cho người mệnh Thủy</h6>
+          <p class="card-text"> Ngày nay, mọi người càng quan tâm nhiều hơn đến yếu tố hợp phong thủy trong cuộc sống cũng như công việc. Bởi khi phong…
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./aset/img/care/phongthuy/menh-hoa-hop-mau-gi-03.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Gợi ý chọn đồng hồ cho người mệnh Hỏa</h6>
+          <p class="card-text"> Chọn phụ kiện, quần áo sao cho hợp phong thủy sẽ mang lại may mắn trong cuộc sống, xua đi những vận đen cho người…
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./aset/img/care/phongthuy/menh-kim-2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Tư vấn chọn đồng hồ cho người mệnh Kim</h6>
+          <p class="card-text"> Trong quan niệm phong thủy của người phương Đông, trong đó có Việt Nam, màu sắc và kiểu dáng của đồ vật chứa đựng mối…
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./aset/img/care/phongthuy/menhtho.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">
+           <br> Người mệnh Thổ thì đeo đồng hồ nào phù hợp?</h6>
+          <p class="card-text"> Chọn được một chiếc đồng hồ hợp phong thủy để đồng hành cùng bạn trong cuộc sống là một điều vô cùng quan trọng. Bạn…
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./aset/img/care/phongthuy/nguoi-menh-moc-min.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Chọn đồng hồ cho người mệnh Mộc</h6>
+          <p class="card-text"> Chọn cho bản thân được một chiếc đồng hồ hợp mệnh được xem là một trong những yếu tố quan trọng nhất trong quá trình…
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./aset/img/care/phongthuy/untitled-design-1.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Gợi ý 5 mẫu đồng hồ đôi chất nhất dành cho chàng và nàng</h6>
+          <p class="card-text">Xu hướng đồ đôi đang rất được ưa chuộng không chỉ ở Việt Nam, mà ở khắp mọi nơi, người ta luôn muốn nói với…
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <h1 class="text_top"> PHÂN BIỆT THẬT GIẢ </h1>
+    <hr>
+    <div class="item">
+      <div class="card">
+        <img src="./aset/img/care/phanbiet/12-phan-biet-jaeger-lecoultre-that-gia-2.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Phân biệt Jaeger LeCoultre thật giả: 4 điểm mấu chốt dễ dàng</h6>
+          <p class="card-text"> Dưới đây sẽ là một số thông tin chia sẻ về các đặc điểm, chi tiết và cấu tạo máy giúp phân biệt Jaeger LeCoultre…
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./aset/img/care/phanbiet/2-mua-dong-ho-marc-jacobs-o-dau-6.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Mua đồng hồ Marc Jacobs ở đâu - cách nhận biết đồng hồ Marc Jacobs thật giả/h6>
+          <p class="card-text"> Nếu bạn đang quan tâm đến đồng hồ Marc Jacobs và thắc mắc nên mua đồng hồ Marc Jacobs ở đâu, bài viết dưới đây…
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./aset/img/care/phanbiet/3.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">ZOOM cận cảnh cách kiểm tra đồng hồ Hublot chính hãng trong 2 phút</h6>
+          <p class="card-text">Những cách kiểm tra đồng hồ Hublot chính hãng lằng nhằng, không thể nhớ nổi. Đừng quá lo lắng, ngay sau đây Boss Luxury sẽ…
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./aset/img/care/phanbiet/4-phan-biet-franck-muller-that-gia-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Làm thế nào để phân biệt Franck Muller thật giả - 3 chỉ dẫn từ Anh Đức Watch</h6>
+          <p class="card-text"> Sản phẩm trở thành sự lựa chọn hoàn hảo cho giới thượng lưu và doanh nhân thành đạt. Tuy nhiên, để tránh mua phải hàng…
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./aset/img/care/phanbiet/hoa-don-the-hublot.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Mẫu đồng hồ Hublot có giá bao nhiêu và Cách phân biệt đồng hồ Hublot giả</h6>
+          <p class="card-text"> Bên cạnh đồng hồ Rolex, Hublot hiện đang là cái tên được nhiều người tín đồ săn đón. Với Boss Luxury, Hublot là một nhà…
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./aset/img/care/phanbiet/rolex-submariner-126610-min-scaled.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Cách nhận biết đồng hồ Rolex chính hãng chuẩn xác tại nhà</h6>
+          <p class="card-text"> Đồng hồ Rolex được xem là một biểu tượng của sự tinh tế và sang trọng. Đây cũng chính là lý do khiến Rolex có…
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./aset/img/care/phanbiet/rolex-datejust-36-126234-1-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Cách nhận biết đồng hồ Rolex Submariner chính hãng chi tiết nhất</h6>
+          <p class="card-text"> Sự khác nhau giữa đồng hồ giả và chính hãng không phải lúc nào cũng rõ ràng, nhưng chỉ với vài hướng dẫn đầy đủ…
+          </p>
+        </div>
+      </div>
+    
+      <div class="card">
+        <img src="./aset/img/care/phanbiet/secret-signatures-hero-1.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Khám phá những nét đặc trưng chỉ có riêng trên một số chiếc đồng hồ</h6>
+          <p class="card-text"> Những sản phẩm giả không phải là một phát minh hiện đại, nhưng công nghệ được cải tiến đã mang đến cho kẻ gian những…
+          </p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="./aset/img/care/phanbiet/zenith-hero-1200x635.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h6 class="card-title">Hướng dẫn 5 cách nhận biết đồng hồ Zenith chính hãng & Fake</h6>
+          <p class="card-text"> Bài viết sau đây, Boss Luxury sẽ bật mí cho bạn 5 cách nhận biết đồng hồ Zenith chính hãng chính xác nhất giúp bạn…
+          </p>
+        </div>
+      </div>
+    </div>
+    
+    <form class="form" action="">
+      <h2 class="text_button">Phản hồi khách hàng</h2>
+      <p>Mọi ý kiến chi tiết quý khách vui lòng điền đầy đủ thông tin vào mục sau:</p>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Họ Và Tên</label>
+        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nguyễn Văn A" required>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Gửi</button>
+    </form>
+  </section>
+</div>
+
+
+<div class="dieuhuong"><span class="back-top is-visible fade-out1 fade-out2 fade-out3 fade-out4"><i class="fa fa-arrow-up" aria-hidden="true"></i></span>
+</div>
+
+<nav class="dieukhien" aria-label="...">
+  <ul class="pagination">
+    <li class="page-item ">
+      <a class="page-link" href="./index.html">1</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="./about.html">2</a>
+    </li>
+    <li class="page-item " aria-current="page">
+      <a class="page-link" href="./new.html">3</a>
+    </li>
+    <li class="page-item active">
+      <a class="page-link" href="./care.html">4</a>
+    </li>
+  </ul>
+</nav>
+   <!-- footer start -->
+   <footer class="footer" >
+    <div class="footer_imfomation">
+      <div class="footer_imfomation-item">
+        <h6>HỆ THỐNG ĐỒNG HỒ CHÍNH HÃNG SUPLO TIME</h6>
+        <ul>
+          <li>Trụ sở: Số 1 Lương Yên, Q.Hai Bà Trưng, Hà Nội</li>
+          <li>Số điện thoại: 0954 525 882</li>
+          <li>Email: support@anhduc.vn</li>
+        </ul>
+      </div>
+      <div class="footer_imfomation-item">
+        <h6>DỊCH VỤ KHÁCH HÀNG <br></h6>
+        <ul>
+          <li>Giám Định Đồng Hồ</li>
+          <li>Sửa Chữa Đồng Hồ</li>
+          <li>Bảng Giá Dịch Vụ</li>
+          <li>Nhận Catalogue</li>
+          <li>Câu Hỏi Thường Gặp</li>
+        </ul>
+      </div>
+      <div class="footer_imfomation-item">
+        <h6>DÒNG SẢN PHẨM <br></h6>
+        <ul>
+          <li>CONSTELLATION</li>
+          <li>SEAMASTER</li>
+          <li>AQUA TERRA</li>
+          <li>MOONWATCH</li>
+          <li>MOONPHASE</li>
+        </ul>
+      </div>
+      <div class="footer_imfomation-item">
+        <h6>ĐĂNG KÝ NHẬN TIN <br></h6>
+        <p>Mỗi tháng chúng tôi đều có những đợt giảm giá dịch vụ và sản phẩm nhằm chi ân khách hàng. Để có thể cập nhật kịp thời những đợt giảm giá này, vui lòng nhập địa chỉ email của bạn vào ô dưới đây</p>
+        <div class="input-group mb-5 ">
+          <input type="email" class="form-control rounded-0" placeholder="Email" aria-label="Email" aria-describedby="button-addon2" required>
+          <button class="btn btn-outline-info bg-light rounded-0" type="button" id="button-addon2">Gửi</button>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid " style="padding: 64px 16px;">
+        <div>
+            <div class="item-conmuniti d-flex justify-content-center" >
+            <i class="bi bi-facebook" ></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-snapchat"></i>
+            <i class="bi bi-pinterest"></i>
+            <i class="bi bi-twitter"></i>
+            <i class="bi bi-linkedin"></i>
+        </div>
+        <p class="text-center text-secondary">Powered by <a href="https://www.w5schools.com/w5css/default.asp" class="text-secondary"  target="_blank">anhduc.css</a></p>
+        </div>
+        
+    </div>
+   </footer>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha584-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha584-ODmDIVzN+pFdexxHEHFBQH5/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+$color1: red;
+$fontsize:16px;
+$main-color: #009688;
+// @mixin set-layout (width, line-height) {
+//     width: 100%;
+//     line-height: 40px;
+// }
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Lora', serif;
+}
+.header{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    &_top{
+        width: 100%;
+        height: 50px;
+        background-color:$color1;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0px;
+        &-left {
+            &-list{
+                list-style-type: none;
+                margin-bottom: 0px;
+
+                &-item{
+                    
+                    display: inline-block;
+                    margin: 0 20px;
+                    &-link {
+                        width: 100%;
+                        line-height: 50px;
+                        text-decoration: none;
+                        font-size: $fontsize;
+                        color: white;
+                    }
+                    }
+                &-item:hover{
+                    color: blue;
+                    background-color: #fff;
+                }
+                }
+            }
+            &-right{
+
+                
+                &-list {
+                    list-style-type: none;
+                    margin-bottom: 0px;
+                    &-item {
+                        display: inline-block;
+                        margin: 0 20px;
+                        line-height: 50px;
+                    & .modal-backdrop {
+                        --bs-backdrop-zindex: 1050;
+                        --bs-backdrop-bg: #fff;
+                        --bs-backdrop-opacity: 0;
+                        //  position: fixed;
+                        // top: 0;
+                        // left: 0;
+                        //     
+                        // width: 100vw;
+                        // height: 100vh;
+                        background-color: #fff;
+                        z-index: 2;
+                        }
+                    }
+                    &-item:hover{
+                        background-color: #fff;
+                        & span{
+                            color: blue;
+                            & strong {
+                                color: blue;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+        
+    &_sportlight{
+       
+            width: 80%;
+            height: 250px;
+            margin-left: 10%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            
+
+            &-shortnews {
+                width: 30%;
+                &-link {
+                    text-decoration: none;
+                    transform: rotate(45deg);
+                   
+                }
+                &-link:hover span{
+                    color: $color1;
+                    transform: scale(2);
+                }
+            }
+
+            &-images{
+                width: 30%;
+                margin-left: 50px;
+            }
+            &-video {
+                width: 40%;
+                height: 100%;
+            }
+        }
+
+    &_navbar {
+            width: 100%;
+            height: 50px;
+            background-color: $color1;
+            box-sizing: border-box;
+     & .navbar-collapse {
+                height: 50px;
+
+                & .navbar-nav{
+                    height: 50px;
+
+                    & .nav-item{
+                        display: inline-block;
+                        height: 50px;
+                        padding-top: 5px;
+
+                        & .nav-link {
+                            height: 50px;
+                            color: #fff;
+                            & .dropdown-menu{
+
+                                & .dropdown-item {
+                                    background-color: #009688;
+                                }
+                                
+                            }
+
+                        }
+                    }
+                    & .nav-item:hover{
+                        background-color: $main-color;
+                    }
+                }
+            }
+    & .navbar-expand{
+        padding: 0px;
+        height: 50px;
+
+    }
+    & .navbar-brand {
+        line-height: 50px;
+        padding: 0px;
+    }     
+    & .navbar-brand:hover {
+                background-color:$main-color;
+                & strong {
+                    color:$color1;
+                }
+                
+            }
+       
+        }
+    }
+   
+    
+    .footer{
+        width: 100%;
+        margin: auto;
+        padding-top: 30px;
+        background-color: $color1;
+        // background-color: linear-gradient(to right, rgba(114, 139, 137, 0.5) 0%, rgba(17, 161, 154, 0.5) 100%);
+        &_imfomation{
+            width: 80%;
+            margin: auto;
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            color: #fff;
+            &-item{
+                width: 25%;
+                max-height: 700px;
+                text-align: left;
+                line-height: 20px;
+    
+                & ul{
+                    list-style: none;
+                    margin-left: -32px;
+                    & li {
+                        margin-top: 10px;
+                    }
+                }
+            }
+        }
+        & .bi {
+            font-size: 50px;
+            margin-right: 15px;
+            color: white;
+            margin-bottom: 50px;
+        }
+        & .bi:hover{
+            color: $main-color;
+            transform: scale(2);
+        }
+       
+    }
+.dieukhien{
+    margin-left: 30px;
+    & .pagination{
+
+        & .page-item{
+            border-radius: 0px;
+            & a{
+                color: red;
+            }
+        & .page-item:hover a {
+            background-color: blue;
+        }
+        }
+      
+    }
+}
+
+@media only screen and (max-width: 740px) {
+    /* For mobile phones: */
+    .header_top {
+        width: 100%;
+        height: 100px;
+    }
+    .header_top-left, .header_top-right {
+      width: 100%;
+      overflow: hidden;
+    }
+    .header_sportlight{
+        width: 100%;
+        margin: 0px;
+    }
+    .header_sportlight-video, .header_sportlight-shortnews {
+        visibility: hidden;
+        text-align: justify;
+    }
+    .footer{
+        &_imfomation{
+            width: 100%;
+            &-item{
+                width: 50%;
+            }
+        }
+    }
+  }

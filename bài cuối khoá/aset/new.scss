@@ -1,0 +1,112 @@
+$color1: red;
+$color2: aqua;
+$fontsize:14px;
+$main-color: #009688;
+// @mixin set-layout (width, line-height) {
+//     width: 100%;
+//     line-height: 40px;
+// }
+*{ 
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    font-family: 'Lora', serif;
+}
+ .main_show{
+
+    &-menu{
+        & h1{
+        text-align: center;
+           height: 50px;
+           color: $color1;
+           text-shadow: 2px 2px $color2;
+           margin-bottom: 30px;
+            & hr{
+                color: $main-color;
+                margin: 14px 0;
+                font-size: 3px;
+            }
+        }
+        #slideshow {
+            overflow: hidden;
+            height: 2500px;
+            width: 300px;
+            margin: 0 auto;
+            border: 1px solid $color1;
+          }
+          
+        .slide-wrapper {
+            width: 300px;
+            animation: slide 5s ease infinite ;
+            display: flex;
+            flex-direction: column;
+          }
+          .slide {
+            height: 400px;
+            width: 300px;
+            margin-right: 5px;
+            & img {
+                width: 300px;
+            }
+            & p{
+                font-weight: 400;
+                color: #019578;
+            }
+          }
+          
+          @keyframes slide {
+            1%  {margin-top: 0px;}
+            14% {margin-top: -400px;}
+            28% {margin-top: -400px;}
+            42% {margin-top: -800px;}
+            66% {margin-top: -800px;}
+            80% {margin-top: -1200px;}
+            100%{margin-top: -1200px;}
+          }
+
+    }
+    &-list {
+        & h1{
+           text-align: center;
+           height: 50px;
+           color: $color1;
+           text-shadow: 2px 2px $color2;
+           margin-bottom: 30px;
+           border: none;
+           & hr{
+               color: $main-color;
+               margin: 14px 0;
+               font-size: 3px;
+           }
+       }
+       & .card {
+           margin-top: 15px;
+           width: 250px; 
+           // height: 400px;
+           border: none;
+           & img{
+           width: 250px;
+           height: 167px;
+               }
+           &-text {
+           text-align: justify;
+           font-size: 12px;
+            
+               }
+           } 
+   }
+ }     
+    
+    
+
+
+
+
+
+
+
